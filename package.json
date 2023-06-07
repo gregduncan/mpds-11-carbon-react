@@ -3,7 +3,11 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@carbon/colors": "11.14.0",
+    "@carbon/icons": "11.19.0",
     "@carbon/react": "^1.23.1",
+    "@carbon/themes": "11.18.0",
+    "@carbon/type": "11.17.0",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
@@ -45,6 +49,8 @@
     ]
   },
   "devDependencies": {
+    "@types/carbon__colors": "10.31.0",
+    "@types/carbon__themes": "0.0.1",
     "@typescript-eslint/eslint-plugin": "^5.54.0",
     "@typescript-eslint/parser": "^5.54.0",
     "eslint": "^8.35.0",

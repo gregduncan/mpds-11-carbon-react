@@ -1,0 +1,485 @@
+// Color variables
+$white: #ffffff;
+
+$steel: #c6c9ca;
+$steel-20: #f4f4f4;
+$steel-40: #e8e9ea;
+$steel-60: #dddfdf;
+$steel-80: #d1d4d5;
+
+$slate: #727a7d;
+$slate-20: #e3e4e5;
+$slate-40: #c7cacb;
+$slate-60: #aaafb1;
+$slate-80: #8e9597;
+
+$charcoal: #39414d;
+$charcoal-20: #d7d9db;
+$charcoal-40: #b0b3b8;
+$charcoal-60: #888d94;
+$charcoal-80: #616771;
+
+$vibrantBlue: #005a9e;
+$vibrantBlue-20: #cce6f9;
+$vibrantBlue-40: #99ccf3;
+$vibrantBlue-60: #66b3ee;
+$vibrantBlue-80: #339ae8;
+
+$cranberry: #a52040;
+$cranberry-20: #edd2d9;
+$cranberry-40: #dba6b3;
+$cranberry-60: #c9798c;
+$cranberry-80: #b74d66;
+
+$emerald: #00a663;
+$emerald-20: #ccede0;
+$emerald-40: #99dbc1;
+$emerald-60: #66caa1;
+$emerald-80: #33b882;
+
+$skyBlue: #50bee1;
+$skyBlue-20: #dcf2f9;
+$skyBlue-40: #b9e5f3;
+$skyBlue-60: #96d8ed;
+$skyBlue-80: #73cbe7;
+
+$spring: #74c061;
+$spring-20: #e3f2df;
+$spring-40: #c7e6c0;
+$spring-60: #acd9a0;
+$spring-80: #90cd81;
+
+$gold: #ffa200;
+$gold-20: #ffeccc;
+$gold-40: #ffda99;
+$gold-60: #ffc766;
+$gold-80: #ffb533;
+
+$pine: #006b3f;
+$pine-20: #cce1d9;
+$pine-40: #99c4b2;
+$pine-60: #66a68c;
+$pine-80: #338965;
+
+// Hex conversion
+@use '@carbon/themes' with (
+  $theme: (
+  // interactive-01: #005A9E,
+  button-primary: #005A9E,
+  background-brand: #005A9E,
+  // interactive-02: #39414D,
+  button-secondary: #39414D,
+  // interactive-03: #004D87,
+  button-tertiary: #004D87,
+  // interactive-04: #0080E2,
+  border-interactive: #0080E2,
+  interactive: #0080E2,
+  // ui-background: #ffffff,
+  background: #ffffff,
+  // ui-01: #f8f8f8,
+  layer-01: #f8f8f8,
+  // ui-02: #ffffff,
+  layer-02: #ffffff,
+  // ui-03: #E8E9EA,
+  layer-accent-01: #E8E9EA,
+  border-subtle-01: #E8E9EA,
+  // ui-04: #727A7D,
+  toggle-off: #727A7D,
+  border-strong-01: #727A7D,
+  // ui-05: #39414D,
+  border-inverse: #39414D,
+  layer-selected-inverse: #39414D,
+  // text-01: #39414D,
+  text-primary: #39414D,
+  // text-02: #616771,
+  text-secondary: #616771,
+  // text-03: #AAAFB1,
+  text-placeholder: #AAAFB1,
+  // text-04: #ffffff,
+  text-on-color: #ffffff,
+  // text-05: #39414D,
+  text-helper: #39414D,
+  // icon-01: #39414D,
+  icon-primary: #39414D,
+  // icon-02: #727A7D,
+  icon-secondary: #727A7D,
+  // icon-03: #ffffff,
+  icon-on-color: #ffffff,
+  // link-01: #005A9E,
+  link-primary: #005A9E,
+  field-01: #F8F8F8,
+  field-02: #ffffff,
+  // inverse-01: #ffffff,
+  icon-inverse: #ffffff,
+  focus-inset: #ffffff,
+  text-inverse: #ffffff,
+  // inverse-02: #39414D,
+  background-inverse: #39414D,
+  // support-01: #A52040,
+  support-error: #A52040,
+  // support-02: #74C061,
+  support-success: #74C061,
+  // support-03: #FFC800,
+  support-warning: #FFC800,
+  // support-04: #50BEE1,
+  support-info: #50BEE1,
+  // inverse-support-01: #A52040,
+  support-error-inverse: #A52040,
+  // inverse-support-02: #74C061,
+  support-success-inverse: #74C061,
+  // inverse-support-03: #FFA200,
+  support-warning-inverse: #FFA200,
+  // inverse-support-04: #005A9E,
+  support-info-inverse: #005A9E,
+  // overlay-01: #39414D60,
+  overlay: #39414D60,
+  // danger: #B74D66,
+  button-danger-primary: #B74D66,  
+  focus: #0080E2,
+  // hover-primary: #0080E2,
+  button-primary-hover: #0080E2,
+  // active-primary: #004D87,
+  button-primary-active: #004D87,
+  // hover-primary-text: #005A9E,
+  link-primary-hover: #005A9E,
+  // hover-secondary: #888D94,
+  button-secondary-hover: #888D94,
+  // active-secondary: #616771,
+  button-secondary-active: #616771,
+  // hover-tertiary: #004D87,
+  button-tertiary-hover: #004D87,
+  // active-tertiary: #00335A,
+  button-tertiary-active: #00335A,
+  // hover-ui: #E8E9EA,
+  background-hover: #E8E9EA,
+  layer-hover-01: #E8E9EA,
+  field-hover-01: #E8E9EA,
+  field-hover-02: #E8E9EA,
+  // active-ui: #C7CACB,
+  layer-active-01: #C7CACB,
+  background-active: #C7CACB,
+  layer-accent-active-01: #C7CACB,
+  border-subtle-selected-01: #C7CACB,
+  // selected-ui: #E3E4E5,
+  layer-selected-01: #E3E4E5,
+  background-selected: #E3E4E5,
+  // hover-selected-ui: #E8E9EA,
+  background-selected-hover: #E8E9EA,
+  layer-accent-hover-01: #E8E9EA,
+  layer-selected-hover-01: #E8E9EA,
+  // hover-danger: #B74D66,
+  button-danger-hover: #B74D66,
+  // active-danger: #631326,
+  button-danger-active: #631326,
+  // hover-row: #E8E9EA,
+  layer-hover-row: #E8E9EA,
+  // visited-link: #307287,
+  link-visited: #307287,
+  // disabled-01: #E3E4E5,
+  // disabled-02: #C6C9CA,
+  text-disabled: #C6C9CA,
+  icon-disabled: #C6C9CA,
+  button-disabled: #C6C9CA,
+  border-disabled: #C6C9CA,  
+  // disabled-03: #727A7D,
+  icon-on-color-disabled: #727A7D,
+  layer-selected-disabled: #727A7D,
+  text-on-color-disabled: #727A7D,
+  highlight: #CCE6F9,
+  // skeleton-01: #E3E4E5,
+  skeleton-background: #E3E4E5,
+  // skeleton-02: #C7CACB,
+  skeleton-element: #C7CACB,
+  // inverse-link: #CCE6F9,
+  link-inverse: #CCE6F9,
+  // inverse-hover-ui: #616771,
+  background-inverse-hover: #616771,
+  // inverse-focus-ui: #FFFFFF
+  focus-inverse: #FFFFFF,
+  )
+);
+
+// Variable conversion
+@use '@carbon/themes' with (
+  $theme: (
+    button-primary: $vibrantBlue,
+    background-brand: $vibrantBlue,
+    // interactive-02: #39414D,
+    button-secondary: $charcoal,
+    // interactive-03: #004D87,
+    button-tertiary: #004D87,
+    // interactive-04: #0080E2,
+    border-interactive: #0080E2,
+    interactive: #0080E2,
+    // ui-background: #ffffff,
+    background: $white,
+    // ui-01: #f8f8f8,
+    layer-01: #f8f8f8,
+    // ui-02: #ffffff,
+    layer-02: $white,
+    // ui-03: #E8E9EA,
+    layer-accent-01: $steel-40,
+    border-subtle-01: $steel-40,
+    // ui-04: #727A7D,
+    toggle-off: $slate,
+    border-strong-01: $slate,
+    // ui-05: #39414D,
+    border-inverse: $charcoal,
+    layer-selected-inverse: $charcoal,
+    // text-01: #39414D,
+    text-primary: $charcoal,
+    // text-02: #616771,
+    text-secondary: $charcoal-80,
+    // text-03: #AAAFB1,
+    text-placeholder: $slate-60,
+    // text-04: #ffffff,
+    text-on-color: $white,
+    // text-05: #39414D,
+    text-helper: $charcoal,
+    // icon-01: #39414D,
+    icon-primary: $charcoal,
+    // icon-02: #727A7D,
+    icon-secondary: $slate,
+    // icon-03: #ffffff,
+    icon-on-color: $white,
+    // link-01: #005A9E,
+    link-primary: $vibrantBlue,
+    field-01: #F8F8F8,
+    field-02: $white,
+    // inverse-01: #ffffff,
+    icon-inverse: $white,
+    focus-inset: $white,
+    text-inverse: $white,
+    // inverse-02: #39414D,
+    background-inverse: $charcoal,
+    // support-01: #A52040,
+    support-error: $cranberry,
+    // support-02: #74C061,
+    support-success: $spring,
+    // support-03: #FFC800,
+    support-warning: $gold,
+    // support-04: #50BEE1,
+    support-info: $skyBlue,
+    // inverse-support-01: #A52040,
+    support-error-inverse: $cranberry,
+    // inverse-support-02: #74C061,
+    support-success-inverse: $spring,
+    // inverse-support-03: #FFA200,
+    support-warning-inverse: $gold,
+    // inverse-support-04: #005A9E,
+    support-info-inverse: $vibrantBlue,
+    // overlay-01: #39414D60,
+    overlay: #39414D60,
+    // danger: #B74D66,
+    button-danger-primary: $cranberry-80,
+    focus: #0080E2,
+    // hover-primary: #0080E2,
+    button-primary-hover: #0080E2,
+    // active-primary: #004D87,
+    button-primary-active: #004D87,
+    // hover-primary-text: #005A9E,
+    link-primary-hover: $vibrantBlue,
+    // hover-secondary: #888D94,
+    button-secondary-hover: $charcoal-60,
+    // active-secondary: #616771,
+    button-secondary-active: $charcoal-80,
+    // hover-tertiary: #004D87,
+    button-tertiary-hover: #004D87,
+    // active-tertiary: #00335A,
+    button-tertiary-active: #00335A,
+    // hover-ui: #E8E9EA,
+    background-hover: $steel-40,
+    layer-hover-01: $steel-40,
+    field-hover-01: $steel-40,
+    field-hover-02: $steel-40,
+    // active-ui: #C7CACB,
+    layer-active-01: $slate-40,
+    background-active: $slate-40,
+    layer-accent-active-01: $slate-40,
+    border-subtle-selected-01: $slate-40,
+    // selected-ui: #E3E4E5,
+    layer-selected-01: $slate-20,
+    background-selected: $slate-20,
+    // hover-selected-ui: #E8E9EA,
+    background-selected-hover: $steel-40,
+    layer-accent-hover-01: $steel-40,
+    layer-selected-hover-01: $steel-40,
+    // hover-danger: #B74D66,
+    button-danger-hover: $cranberry-80,
+    // active-danger: #631326,
+    button-danger-active: #631326,
+    // hover-row: #E8E9EA,
+    layer-hover-row: $steel-40,
+    // visited-link: #307287,
+    link-visited: #307287,
+    // disabled-01: #E3E4E5,
+    // disabled-02: #C6C9CA,
+    text-disabled: $steel,
+    icon-disabled: $steel,
+    button-disabled: $steel,
+    border-disabled: $steel,
+    // disabled-03: #727A7D,
+    icon-on-color-disabled: $slate,
+    layer-selected-disabled: $slate,
+    text-on-color-disabled: $slate,
+    highlight: #CCE6F9,
+    // skeleton-01: #E3E4E5,
+    skeleton-background: $slate-20,
+    // skeleton-02: #C7CACB,
+    skeleton-element: $slate-40,
+    // inverse-link: #CCE6F9,
+    link-inverse: #CCE6F9,
+    // inverse-hover-ui: #616771,
+    background-inverse-hover: $charcoal-80,
+    // inverse-focus-ui: #FFFFFF
+    focus-inverse: $white,
+    
+  )
+);
+
+// Missing v11 tokens...
+// background-selected-inverse
+// layer-03
+// layer-hover-02
+// layer-hover-03
+// layer-active-02
+// layer-active-03
+// layer-selected-02
+// layer-selected-03
+// layer-selected-hover-02
+// layer-selected-hover-03
+// layer-accent-02
+// layer-accent-03
+// layer-accent-hover-02
+// layer-accent-hover-03
+// layer-accent-active-02
+// layer-accent-active-03
+// field-03
+// field-hover-03
+// border-subtle-00
+// border-subtle-02
+// border-subtle-03
+// border-subtle-selected-02
+// border-subtle-selected-03
+// border-strong-02
+// border-strong-03
+// border-tile-01
+// border-tile-02
+// border-tile-03
+// border-disabled
+// text-error
+// button-separator
+// link-secondary
+// icon-interactive
+// button-danger-secondary
+
+// All v11 tokens...
+// background
+// background-hover
+// background-active
+// background-selected
+// background-selected-hover
+// background-inverse
+// background-inverse-hover
+// background-brand
+// layer-01
+// layer-02
+// layer-03
+// layer-hover-01
+// layer-hover-02
+// layer-hover-03
+// layer-active-01
+// layer-active-02
+// layer-active-03
+// layer-selected-01
+// layer-selected-02
+// layer-selected-03
+// layer-selected-hover-01
+// layer-selected-hover-02
+// layer-selected-hover-03
+// layer-selected-inverse
+// layer-selected-disabled
+// layer-accent-01
+// layer-accent-02
+// layer-accent-03
+// layer-accent-hover-01
+// layer-accent-hover-02
+// layer-accent-hover-03
+// layer-accent-active-01
+// layer-accent-active-02
+// layer-accent-active-03
+// field-01
+// field-02
+// field-03
+// field-hover-01
+// field-hover-02
+// field-hover-03
+// border-interactive
+// border-subtle-00
+// border-subtle-01
+// border-subtle-02
+// border-subtle-03
+// border-subtle-selected-01
+// border-subtle-selected-02
+// border-subtle-selected-03
+// border-strong-01
+// border-strong-02
+// border-strong-03
+// border-tile-01
+// border-tile-02
+// border-tile-03
+// border-inverse
+// border-disabled
+// text-primary
+// text-secondary
+// text-placeholder
+// text-on-color
+// text-on-color-disabled
+// text-helper
+// text-error
+// text-inverse
+// text-disabled
+// link-primary
+// link-primary-hover
+// link-secondary
+// link-inverse
+// link-visited
+// icon-primary
+// icon-secondary
+// icon-on-color
+// icon-on-color-disabled
+// icon-interactive
+// icon-inverse
+// icon-disabled
+// button-primary
+// button-primary-hover
+// button-primary-active
+// button-secondary
+// button-secondary-hover
+// button-secondary-active
+// button-tertiary
+// button-tertiary-hover
+// button-tertiary-active
+// button-danger-primary
+// button-danger-secondary
+// button-danger-hover
+// button-danger-active
+// button-separator
+// button-disabled
+// support-error
+// support-success
+// support-warning
+// support-info
+// support-error-inverse
+// support-success-inverse
+// support-warning-inverse
+// support-info-inverse
+// focus
+// focus-inset
+// focus-inverse
+// interactive
+// highlight
+// toggle-off
+// overlay
+// skeleton-element
+// skeleton-background

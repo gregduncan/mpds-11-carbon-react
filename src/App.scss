@@ -1,38 +1,149 @@
-@use '@carbon/themes/scss/themes' as *;
+$white: #ffffff;
 
-$blue-10: #def2ff;
-$blue-20: #c2e5fc;
-$blue-30: #91cbf2;
-$blue-40: #5eb0eb;
-$blue-50: #2f97e0;
-$blue-60: #0078d4;
-$blue-70: #0061ab;
-$blue-80: #00417d;
-$blue-90: #002e5c;
-$blue-100: #001f3d;
-$turquoise-60: #00989F;
-$turquoise-40: #48B1B5;
+$steel: #c6c9ca;
+$steel-20: #f4f4f4;
+$steel-40: #e8e9ea;
+$steel-60: #dddfdf;
+$steel-80: #d1d4d5;
 
-$theme--milliman: (
-        blue-10: $blue-10,
-        blue-20: $blue-20,
-        blue-30: $blue-30,
-        blue-40: $blue-40,
-        blue-50: $blue-50,
-        blue-60: $blue-60,
-        blue-70: $blue-70,
-        blue-80: $blue-80,
-        blue-90: $blue-90,
-        blue-100: $blue-100,
-        purple-60: $turquoise-60,
-        purple-40: $turquoise-40,
+$slate: #727a7d;
+$slate-20: #e3e4e5;
+$slate-40: #c7cacb;
+$slate-60: #aaafb1;
+$slate-80: #8e9597;
+
+$charcoal: #39414d;
+$charcoal-20: #d7d9db;
+$charcoal-40: #b0b3b8;
+$charcoal-60: #888d94;
+$charcoal-80: #616771;
+
+$vibrantBlue: #005a9e;
+$vibrantBlue-20: #cce6f9;
+$vibrantBlue-40: #99ccf3;
+$vibrantBlue-60: #66b3ee;
+$vibrantBlue-80: #339ae8;
+
+$cranberry: #a52040;
+$cranberry-20: #edd2d9;
+$cranberry-40: #dba6b3;
+$cranberry-60: #c9798c;
+$cranberry-80: #b74d66;
+
+$emerald: #00a663;
+$emerald-20: #ccede0;
+$emerald-40: #99dbc1;
+$emerald-60: #66caa1;
+$emerald-80: #33b882;
+
+$skyBlue: #50bee1;
+$skyBlue-20: #dcf2f9;
+$skyBlue-40: #b9e5f3;
+$skyBlue-60: #96d8ed;
+$skyBlue-80: #73cbe7;
+
+$spring: #74c061;
+$spring-20: #e3f2df;
+$spring-40: #c7e6c0;
+$spring-60: #acd9a0;
+$spring-80: #90cd81;
+
+$gold: #ffa200;
+$gold-20: #ffeccc;
+$gold-40: #ffda99;
+$gold-60: #ffc766;
+$gold-80: #ffb533;
+
+$pine: #006b3f;
+$pine-20: #cce1d9;
+$pine-40: #99c4b2;
+$pine-60: #66a68c;
+$pine-80: #338965;
+
+@use '@carbon/themes' with (
+  $theme: (
+    button-primary: $vibrantBlue,
+    background-brand: $vibrantBlue,
+    button-secondary: $charcoal,
+    button-tertiary: #004D87,
+    border-interactive: #0080E2,
+    interactive: #0080E2,
+    background: $white,
+    layer-01: #f8f8f8,
+    layer-02: $white,
+    layer-accent-01: $steel-40,
+    border-subtle-01: $steel-40,
+    toggle-off: $slate,
+    border-strong-01: $slate,
+    border-inverse: $charcoal,
+    layer-selected-inverse: $charcoal,
+    text-primary: $charcoal,
+    text-secondary: $charcoal-80,
+    text-placeholder: $slate-60,
+    text-on-color: $white,
+    text-helper: $charcoal,
+    icon-primary: $charcoal,
+    icon-secondary: $slate,
+    icon-on-color: $white,
+    link-primary: $vibrantBlue,
+    field-01: #F8F8F8,
+    field-02: $white,
+    icon-inverse: $white,
+    focus-inset: $white,
+    text-inverse: $white,
+    background-inverse: $charcoal,
+    support-error: $cranberry,
+    support-success: $spring,
+    support-warning: $gold,
+    support-info: $skyBlue,
+    support-error-inverse: $cranberry,
+    support-success-inverse: $spring,
+    support-warning-inverse: $gold,
+    support-info-inverse: $vibrantBlue,
+    overlay: #39414D60,
+    button-danger-primary: $cranberry-80,
+    focus: #0080E2,
+    button-primary-hover: #0080E2,
+    button-primary-active: #004D87,
+    link-primary-hover: $vibrantBlue,
+    button-secondary-hover: $charcoal-60,
+    button-secondary-active: $charcoal-80,
+    button-tertiary-hover: #004D87,
+    button-tertiary-active: #00335A,
+    background-hover: $steel-40,
+    layer-hover-01: $steel-40,
+    field-hover-01: $steel-40,
+    field-hover-02: $steel-40,
+    layer-active-01: $slate-40,
+    background-active: $slate-40,
+    layer-accent-active-01: $slate-40,
+    border-subtle-selected-01: $slate-40,
+    layer-selected-01: $slate-20,
+    background-selected: $slate-20,
+    background-selected-hover: $steel-40,
+    layer-accent-hover-01: $steel-40,
+    layer-selected-hover-01: $steel-40,
+    button-danger-hover: $cranberry-80,
+    button-danger-active: #631326,
+    layer-hover-row: $steel-40,
+    link-visited: #307287,
+    text-disabled: $steel,
+    icon-disabled: $steel,
+    button-disabled: $steel,
+    border-disabled: $steel,
+    icon-on-color-disabled: $slate,
+    layer-selected-disabled: $slate,
+    text-on-color-disabled: $slate,
+    highlight: #CCE6F9,
+    skeleton-background: $slate-20,
+    skeleton-element: $slate-40,
+    link-inverse: #CCE6F9,
+    background-inverse-hover: $charcoal,
+    focus-inverse: $white,
+      )
 );
-@use '@carbon/themes' with
-  (
-    $fallback: $white,
-    $theme: $theme--milliman
-  );
 
 :root {
-  @include themes.theme();
+    @include themes.theme();
 }
+  
